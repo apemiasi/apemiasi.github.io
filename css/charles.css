@@ -1,0 +1,506 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  background-color: #00A8E8;
+  height: 100%;
+  font-family: 'made_tommy', sans-serif;
+}
+p.textA {
+  font-size: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+  
+span {
+  border-right: 2px solid;
+  animation: caret 1s steps(1) infinite;
+}
+  
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@font-face {
+  font-family: 'made_tommy';
+  src: url(Font/made_tommy/MadeTommyReguler.otf);
+}
+/* tittle */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 280px;
+  gap: 100px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #00171F;
+}
+
+nav a:hover{
+  color: white;
+}
+
+/* satu */
+
+@font-face {
+  font-family:made-tommy;
+  src: url(made_tommy/Made-tommy-reguler.otf);
+}
+
+p,h1,h2,h3{
+  font-family: made-tommy;
+}
+.kesatu{
+  margin: 80px 80px;
+}
+.kesatu .satu .bungkus-1{
+  padding: 40px 0;
+}
+.kesatu .satu .bungkus-1 h1{
+  font-size: 5em;
+  padding: 20 0;
+  margin: 0;
+}
+
+.kesatu .satu .bungkus-1 button{
+  padding: 10px 20px;
+  background-color: #00A8E8;
+  border-radius: 7px;
+}
+
+.kesatu .satu .bungkus-1 button:hover{
+  border: 2px solid white;
+  color: white;
+}
+.kesatu .satu .bungkus-2{
+  margin: 151px 0;
+}
+.kesatu .satu .bungkus-2 h2{
+  font-size: 16px;
+}
+
+.bungkus-2 img {
+  width: 40px;
+}
+/* section1 */
+.section1 .title h1{
+  font-size: 62px;
+  display: flex;
+  justify-content: center;
+}
+.section1 .kedua{
+  display: flex;
+  margin: 100px 80px;
+  gap: 305px;
+}
+.section1 .kedua .dua .kotak{
+  border: 2px solid black;
+  position: absolute;
+  width: 100px;
+  border-radius: 10px;
+  height: 343px;
+  z-index: 1;
+}
+.section1 .kedua .dua {
+  display: flex;
+  align-items: center;
+}
+.section1 .kedua .dua .gambar{
+  background-color: #007EA7;
+  height: 320px;
+  width: 180px;
+  border-radius: 10px;
+  margin: 0 34px;
+  z-index: 2;
+}
+.section1 .kedua .dua-1 .bungkus-3 p{
+  padding: 3px 0;
+  color: black;
+}
+.section1 .kedua .dua-1 .bungkus-3 .Bbungkus-3{
+  margin: 60px 0;
+}
+.section1 .kedua .dua-1 .bungkus-3 .Bbungkus-3 h1{
+  font-size: 5vh;
+}
+
+/* english */
+
+
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .english .Tenglish{
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .english .kotak-2{
+  width: 100%;
+  display: flex;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .english .kotak-2 .kotak-d2{
+  background-color: white;
+  border: 2px solid white;
+  width: 20%;
+  height: 11px;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .english .kotak-2 .kotak-d2-1{
+  background-color: black;
+  border: 2px solid black;
+  width: 80%;
+  height: 11px;
+}
+
+/* indonesia */
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Indonesia .TIndonesia{
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Indonesia .kotak-3{
+  width: 100%;
+  display: flex;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Indonesia .kotak-3 .kotak-d3{
+  background-color: white;
+  border: 2px solid white;
+  width: 80%;
+  height: 11px;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Indonesia .kotak-3 .kotak-d3-1{
+  background-color: black;
+  border: 2px solid black;
+  width: 20%;
+  height: 11px;
+}
+
+/* Mand */
+
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Manda .Tmand{
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Manda .kotak-4{
+  width: 100%;
+  display: flex;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Manda .kotak-4 .kotak-d4{
+  background-color: white;
+  border: 2px solid white;
+  width: 20%;
+  height: 11px;
+}
+.section1 .kedua .dua-1 .bungkus-3 .bungkus-4 .Manda .kotak-4 .kotak-d4-1{
+  background-color: black;
+  border: 2px solid black;
+  width: 80%;
+  height: 11px;
+}
+
+/* section2 */
+
+/* kiri */
+.section2 .title h1{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+.section2 .ketiga{
+  margin: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .ketiga .bungkus-5{
+  border: 2px solid #00171F;
+  display: flex;
+  background-color: #00171F;
+  border-radius: 7px;
+  padding: 0 25px
+}
+.section2 .ketiga .bungkus-5 .text h1,h2,p,h3{
+  color: white;
+  padding: 7px 0;
+}
+.section2 .ketiga .bungkus-5 .text-1{
+  border-left: 2px solid white;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+/* tiga */
+.section-tiga .title h1{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+.section-tiga .I-tiga{
+  margin: 0 80px;
+}
+.section-tiga .I-tiga .PS{
+  margin: 100px 0;
+  border: 2px solid #00171F;
+  background-color: #00171F;
+  border-radius: 7px;
+  padding: 5px 46px;
+  width: fit-content;
+}
+.section-tiga .I-tiga .PS h1{
+  color: white;
+}
+.section-tiga .I-tiga .BJHS {
+  margin: 50px 0  ;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-tiga .I-tiga .BJHS .JHS h1{
+  color: white;
+}
+.section-tiga .I-tiga .BJHS .JHS{
+  border: 2px solid #00171F;
+  background-color: #00171F;
+  border-radius: 7px;
+  padding: 5px 46px;
+  width: fit-content;
+}
+
+/* empat */
+.adobe{
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-empat .title h1{
+  font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.section-empat .adobe{
+  margin: 0 80px;
+}
+.section-empat .adobe .AI{
+  border: 2px solid #00171F;
+  background-color: #00171F;
+  width: fit-content;
+  display: flex;
+  padding: 10px 41px;
+  border-radius: 7px;
+  margin: 47px 0;
+}
+.section-empat .adobe .AI img{
+  width: 100px;
+  height: 100px;
+}
+.section-empat .adobe .AI .AI-nilai{
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-empat .adobe .AI .AI-nilai .b-AI-nilai {
+  width: 109.75px;
+  display: flex;
+}
+.section-empat .adobe .AI .AI-nilai .b-AI-nilai .AI-nilai-b{
+  border: 2px solid #007EA7;
+  background-color: #007EA7;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  width: 80%;
+}
+.section-empat .adobe .AI .AI-nilai .b-AI-nilai .AI-nilai-p{
+  border: 2px solid white;
+  background-color: white;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 20%;
+}
+.section-empat .adobe .AI .AI-nilai .b-AI-nilai .AI-nilai-b-1{
+  border: 2px solid #007EA7;
+  background-color: #007EA7;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  width: 40%;
+}
+.section-empat .adobe .AI .AI-nilai .b-AI-nilai .AI-nilai-p-1{
+  border: 2px solid white;
+  background-color: white;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 60%;
+}
+.section-empat .adobe .AI .AI-nilai .b-AI-nilai .AI-nilai-b p,.AI-nilai-b-1 p{
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* kelima */
+
+.kelima{
+  margin: 0 80px;
+}
+.kelima .title h1{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+.kelima .B-animation{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* animation1 */
+
+.kelima .B-animation .animation .nilai{
+  width: 200%;
+  display: flex;
+  height: 10px;
+}
+.kelima .B-animation .animation .nilai .nilai-p{
+  border: 2px solid white;
+  background-color: white;
+  width: 20%;
+}
+.kelima .B-animation .animation .nilai .nilai-h{
+  border: 2px solid black;
+  background-color: black;
+  width: 80%;
+}
+
+
+/* enam */
+.enam {
+  margin: 0 80px;
+}
+.enam .B-kiri-kanan{
+  display: flex;
+  justify-content: space-between;
+}
+.enam .title h1{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+.enam .bg-form{
+  background-color: #00171F;
+    width: 40%;
+    border-radius: 18px;
+}
+.enam form{
+  border: none;
+    flex-direction: column;
+    padding: 0 27px;
+    height: 261px;
+    display: flex;
+    place-content: center;
+}
+.enam form input{
+  background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+.enam form button{
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  height: 36px;
+}
+
+/* enam kanan */
+
+.enam .kanan{
+  border: 2px solid #00171F;
+  background-color: #00171F;
+  width: 40%;
+  border-radius: 18px;
+  height: 50%;
+}
+.enam .kanan .contact{
+  display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    
+}
+.enam .kanan .contact img{
+  width: 30px;
+  height: 30px;
+  padding: 0 20px;
+}
+.enam .kanan .contact .email{
+  border: 2px solid white;
+    border-radius: 8px;
+    margin: 20px 20px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+}
+.enam .kanan .contact .NOT{
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 286px;
+  height: 25%;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 17px;
+}
+.enam .kanan .contact .NOT p{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

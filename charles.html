@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/charles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(event){
+  // array with texts to type in typewriter
+  var dataText = [ "Hi, I'm Animator", "Hi, I'm Designer", "Hi, I'm Photographer", "Hi, I'm Programmer"];
+  
+  // type one text in the typwriter
+  // keeps calling itself until the text is finished
+  function typeWriter(text, i, fnCallback) {
+    // chekc if text isn't finished yet
+    if (i < (text.length)) {
+      // add next character to h1
+     document.querySelector("p.textA").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+      // wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // text finished, call callback if there is a callback function
+    else if (typeof fnCallback == 'function') {
+      // call callback after timeout
+      setTimeout(fnCallback, 700);
+    }
+  }
+  // start a typewriter animation for a text in the dataText array
+   function StartTextAnimation(i) {
+     if (typeof dataText[i] == 'undefined'){
+        setTimeout(function() {
+          StartTextAnimation(0);
+        }, 20000);
+     }
+     // check if dataText[i] exists
+    if (i < dataText[i].length) {
+      // text exists! start typewriter animation
+     typeWriter(dataText[i], 0, function(){
+       // after callback (and whole text has been animated), start next text
+       StartTextAnimation(i + 1);
+     });
+    }
+  }
+  // start the text animation
+  StartTextAnimation(0);
+});
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <h1>CHARLES</h1>
+        <a href="#">Project</a>
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <div class="kesatu">
+            <div class="satu">
+                <div class="bungkus-1">
+                    <p class="textA"></p>
+                    <h1>CHARLES</h1>
+                    <button>Download CV</button>
+                </div>
+                <div class="bungkus-2">
+                    <h2>Follow Me</h2>
+                    <img src="Gambar/Email.png" alt="Email">
+                    <img src="Gambar/Telepon.png" alt="Telepon">
+                </div>
+            </div>
+            <div class="satu-1">
+                <img src="" alt="">
+                <div class="kotak"></div>
+            </div>
+        </div>
+    </section>
+<!-- ini section 1 -->
+    <section class="section1">
+        <div class="title">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="kedua">
+            <div class="dua">
+                <div class="kotak"></div>
+                <div class="gambar"></div>
+            </div>
+            <div class="dua-1">
+                <div class="bungkus-3">
+                    <p>Hi, my name is Charles usually i am called Char</p>
+                    <p>I was born in Selatpanjang on 27 March 2005.</p>
+                    <p>My major is Multimedia. I am Indonesia citizen</p>
+                    <p>and my hobbies are Basket, Playing Games,</p>
+                    <p>Watching Movies, and Editing.</p>
+                    <div class="Bbungkus-3">
+                        <h1>LANGUAGE</h1>
+                <div class="bungkus-4">
+                    <div class="english">
+                        <div class="Tenglish">
+                            <h2>English</h2>
+                            <p>20%</p>
+                        </div>
+                        <div class="kotak-2">
+                            <div class="kotak-d2"></div>
+                            <div class="kotak-d2-1"></div>
+                        </div>
+                    </div>
+                    <div class="Indonesia">
+                            <div class="TIndonesia">
+                                <h2>Indonesian</h2>
+                                <p>80%</p>
+                            </div>
+                        <div class="kotak-3">
+                            <div class="kotak-d3"></div>
+                            <div class="kotak-d3-1"></div>
+                        </div>
+                    </div>
+                   <div class="Manda">
+                    <div class="Tmand">
+                        <h2>Mandarin</h2>
+                        <p>20%</p>
+                    </div>
+                    <div class="kotak-4">
+                        <div class="kotak-d4"></div>
+                        <div class="kotak-d4-1"></div>
+                    </div>
+                   </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+<!-- ini section 2 -->
+    <section class="section2">
+        <div class="title">
+            <h1>WORK EXPERIENCE</h1>
+        </div>
+        <div class="ketiga">
+            <div class="bungkus-5">
+                    <div class="text">
+                        <h2>CV. Leo Printing</h2>
+                        <p>Batam/Jul-Nov/2021</p>
+                    </div>
+                    <div class="text-1">
+                        <h3>Designer</h3>
+                        <p>Banner</p>
+                        <p>Billboard</p>
+                        <p>Name Card</p>
+                        <p>etc</p>
+                    </div>
+            </div>
+            <div class="bungkus-5">
+                    <div class="text">
+                        <h2>CV. Leo Printing</h2>
+                        <p>Batam/Jul-Nov/2021</p>
+                    </div>
+                    <div class="text-1">
+                        <p>Operator</p>
+                        <p>Cutting</p>
+                        <p>Finishing</p>
+                        <p>Laminating</p>
+                        <p>Printing</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+<!-- ini section 3 -->
+<section>
+    <div class="section-tiga">
+        <div class="title">
+            <h1>EDUCATION</h1>
+        </div>
+        <DIV class="I-tiga">
+            <div class="PS">
+                <h1>Primary school</h1>
+                <p>Maitreyawira/Batam/2011-2017</p>
+            </div>
+            <div class="BJHS">
+                <div class="JHS">
+                    <h1>Junior High School</h1>
+                    <p>Maitreyawira/Batam/2017-2020</p>
+                </div>
+            </div>
+            <div class="PS">
+                <h1>Vocational High School</h1>
+                <p>Maitreyawira/Batam/2020-2023</p>
+            </div>
+        </DIV>
+    </div>
+</section>
+<section>
+    <div class="section-empat">
+        <div class="title">
+            <h1>SOFTWARE</h1>
+        </div>
+        <div class="adobe">
+            <div class="AI">
+                <img src="Gambar/Ai.png" alt="">
+                <div class="AI-nilai">
+                    <h2>Adobe Illustrator</h2>
+                    <div class="b-AI-nilai">
+                        <div class="AI-nilai-b"><p>80%</p></div>
+                        <div class="AI-nilai-p"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="AI">
+                <img src="Gambar/Untitled-1.png" alt="">
+                <div class="AI-nilai">
+                    <h2>Photoshop</h2>
+                    <div class="b-AI-nilai">
+                        <div class="AI-nilai-b-1"><p>40%</p></div>
+                        <div class="AI-nilai-p-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="kelima">
+        <div class="title">
+            <h1>SKILL</h1>
+        </div>
+            <div class="B-animation">
+                <div class="animation-1">
+                    <div class="animation">
+                        <h2>Animation</h2>
+                        <div class="nilai">
+                            <div class="nilai-p"></div>
+                            <div class="nilai-h"></div>
+                        </div>
+                    </div>
+                    <div class="animation">
+                        <h2>Editing</h2>
+                        <div class="nilai">
+                            <div class="nilai-p"></div>
+                            <div class="nilai-h"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animation-2">
+                    <div class="animation">
+                        <h2>Videography</h2>
+                        <div class="nilai">
+                            <div class="nilai-p"></div>
+                            <div class="nilai-h"></div>
+                        </div>
+                    </div>
+                    <div class="animation">
+                        <h2 style="width: 81.78px;">Coding</h2>
+                        <div class="nilai">
+                            <div class="nilai-p"></div>
+                            <div class="nilai-h"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animation-3">
+                    <div class="animation">
+                        <h2>Photography</h2>
+                        <div class="nilai">
+                            <div class="nilai-p"></div>
+                            <div class="nilai-h"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section>
+    <div class="enam">
+        <div class="title">
+            <h1>CONTACT</h1>
+        </div>
+        <div class="B-kiri-kanan">
+            <div class="bg-form">
+                <form action="">
+                    <input type="text" placeholder="Name" style="margin-bottom: 20px;">
+                    <input type="text" placeholder="your email" style="margin-bottom: 20px ;">
+                    <input type="text" placeholder="your message" style="padding-bottom: 53px; margin-bottom: 10px;">
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            <div class="kanan">
+                <div class="contact">
+                    <div class="email">
+                        <img src="Gambar/Email-2.png" alt="">
+                        <p style="padding: 20px 0;">charles.chen8818@gmail.com</p>
+                    </div>
+                    <div class="NOT">
+                        <img src="Gambar/Telepon-2.png" alt="">
+                        <p style="padding: 20px 0;">0812-6891-2712</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
